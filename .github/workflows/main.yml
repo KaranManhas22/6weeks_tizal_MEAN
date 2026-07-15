@@ -22,7 +22,7 @@ jobs:
           script: |
             cd /home/karan/frontendBicycle/
             git pull origin main
-            npm i
+            sudo npm i
             npm run build
             cd dist/bicycle/
             sudo npm i pm2 -g
