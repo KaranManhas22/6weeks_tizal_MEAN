@@ -20,7 +20,7 @@ jobs:
           password: ${{secrets.PASSWORD}}
 
           script: |
-            cd /home/karan/frontendBicycle/
+            cd /home/tizal/6weeks_tizal_MEAN
             git pull origin main
             sudo npm i
             npm run build
