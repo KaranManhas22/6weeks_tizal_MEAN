@@ -2,7 +2,8 @@ import axios from "axios";
 
 // export const BASE_URL = "http://192.168.1.6:8000/";
 // export const BASE_URL = "http://localhost:8000/";
-export const BASE_URL = "http://104.214.169.177:3015/api/";
+// export const BASE_URL = "http://104.214.169.177:3015/api/";
+export const BASE_URL = "http://20.164.203.115:3015/api/";
 
 class APIService {
 
