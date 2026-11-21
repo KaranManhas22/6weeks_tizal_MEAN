@@ -20,10 +20,10 @@ jobs:
           password: ${{secrets.PASSWORD}}
 
           script: |
-            cd /home/tizal/6weeks_tizal_MEAN
+            cd /home/ubuntu/6weeks_tizal_MEAN
             git pull origin main
             sudo npm i
-            npm run build
+            sudo npm run build
             cd dist/bicycle/
-            sudo npm i pm2 -g
+            // sudo npm i pm2 -g
             pm2 restart "Bicycle Frontend" || pm2 start --name "Bicycle Frontend" http-server -- -p 4200 -d false
