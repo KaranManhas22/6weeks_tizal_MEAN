@@ -26,4 +26,4 @@ jobs:
             sudo npm run build
             cd dist/
             // sudo npm i pm2 -g
-            pm2 restart "Bicycle Frontend" || pm2 start --name "Bicycle Frontend" http-server -- -p 4200 -d false
+            pm2 restart "Bicycle Frontend" || pm2 start --name "Bicycle Frontend" http-server -- /home/ubuntu/6weeks_tizal_MEAN/dist -p 4200 -d false
