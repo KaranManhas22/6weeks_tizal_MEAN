@@ -24,6 +24,6 @@ jobs:
             git pull origin main
             sudo npm i
             sudo npm run build
-            cd dist/bicycle/
+            cd dist/
             // sudo npm i pm2 -g
             pm2 restart "Bicycle Frontend" || pm2 start --name "Bicycle Frontend" http-server -- -p 4200 -d false
